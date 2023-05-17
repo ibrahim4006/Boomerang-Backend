@@ -1,0 +1,98 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  border-bottom: 1px solid #000000;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #f7f6f1;
+  position: relative;
+}
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+}
+.panel-link{
+  text-decoration: none;
+}
+
+.logonav {
+  height: 60px;
+  object-fit: contain;
+  flex: 1;
+  border-right: 1px solid #000000;
+  margin-bottom: -5px;
+}
+.timer-container {
+  position: absolute;
+  top: 60;
+  right: 13%;
+  width: 35%;
+  background-color: black;
+  height: 250px;
+  margin-top: 15px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.ayrac {
+  height: 20px;
+  object-fit: contain;
+  flex: 1;
+  border-right: 1px solid white;
+  position: absolute;
+  top: 40%;
+  left: 5px;
+  width: 98%;
+}
+
+#timer {
+  border: none;
+  padding: 12px;
+  padding-top: 15px;
+}
+
+.nav-el {
+  margin-left: 20px;
+  padding: 10px;
+}
+.nav-el:hover {
+  background-color: #0d0d0d;
+  color: #f7f6f1;
+  padding: 10px;
+}
+
+.text {
+  font-size: 12px;
+}
+
+.nav-el.bar {
+  margin-left: 20px;
+  padding: 10px;
+  transform: scale(-1, 1);
+  font-size: 48px;
+}
+
+.nav-el.level {
+  margin-left: 20px;
+  padding: 10px;
+  transform: rotate(90deg);
+  font-size: 48px;
+}
+
+.pano {
+  position: absolute;
+  right: 0;
+  width: 30%;
+  height: 45vw;
+  background-color: #0D0D0D;
+  margin-top: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 6%;
+}

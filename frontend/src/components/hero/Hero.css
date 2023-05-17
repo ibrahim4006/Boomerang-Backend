@@ -1,0 +1,36 @@
+.hero {
+  border-bottom: 1px solid black;
+  height: 12vw;
+  display: block;
+  position: relative;
+}
+.subject-path {
+  height: 30%;
+  width: 30%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.subject-path p {
+  margin-left: -10px;
+}
+.hero-nav {
+  position: absolute;
+  top: 30%;
+  left: 28%;
+  display: flex;
+}
+.subject-title {
+  text-align: end;
+  position: absolute;
+  bottom: 0;
+  right: 15%;
+}
+.subject-path hr {
+  height: 60px;
+  background-color: black;
+  border: none;
+  width: 2px;
+}

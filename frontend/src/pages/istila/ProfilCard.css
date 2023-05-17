@@ -1,0 +1,21 @@
+.profilcard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.level-icon {
+  transform: rotate(90deg);
+  font-size: 32px;
+  margin-left: 50px;
+}
+.profilcard img {
+  margin-left: 50px;
+}
+.seviye{
+  margin-left: 50px;
+}
+.personalinfo {
+  margin-left: 50px;
+}

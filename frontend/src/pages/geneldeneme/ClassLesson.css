@@ -1,0 +1,68 @@
+.classlesson {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-bottom: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+.classlesson:hover {
+  cursor: pointer;
+  margin: 3px;
+}
+.classlesson h1 {
+  padding-left: 17%;
+  font-size: 20px;
+}
+.lessonprogresscard {
+  top: 100%;
+  border-top: 1px solid black;
+  height: 10vw;
+  z-index: 2;
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  opacity: 0;
+  animation: fade-in 0.5s ease-in-out forwards;
+}
+@keyframes fade-in {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.lessonprogresscard::before {
+  content: ""; /* Create a pseudo-element for the triangle */
+  position: absolute; /* Position the triangle absolutely within the container */
+  top: 0;
+  right: 0; /* Center the triangle horizontally */
+  width: 120px;
+  height: 120px;
+  border-bottom: 1px solid black;
+  transform: rotate(45deg);
+  margin-right: -60px;
+  margin-top: -60px;
+}
+
+.boomerang-icn{
+  right: 5px;
+  top : 10px;
+  position: absolute;
+}
+
+.cardprogress {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 10%;
+}
+.cardprogress p {
+  font-size: 12px;
+}
+
+.cardprogress h1 {
+  font-size: 4em;
+}

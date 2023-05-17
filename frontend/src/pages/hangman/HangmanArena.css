@@ -1,0 +1,36 @@
+.hangmanname{
+    color: #F7F6F1;
+}
+.arena{
+    color: #F7F6F1;
+}
+.figure-container {
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 6px;
+    stroke-linecap: round;
+    margin-top: 50px;
+  }
+.wrongbox{
+    margin-top: -60px;
+    width: 400px;
+    height: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.dark1,
+.dark2,
+.dark3,
+.dark4,
+.dark5,
+.dark6,
+.dark7,
+.dark8,
+.dark9,
+.dark10 {
+    opacity: 0.4;
+}
+.light{
+    opacity: 1 ;
+}

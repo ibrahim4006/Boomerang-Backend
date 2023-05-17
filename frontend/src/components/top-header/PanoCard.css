@@ -1,0 +1,18 @@
+.panocard {
+    width: 100%;
+    height: 25%;
+    color: #FFFFFF;
+    padding-top: 7px;
+    display: flex;
+    flex-direction: column;
+}
+.panocard-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+}
+.panocard-bottom {
+    display: block;
+    margin: 5px 0;
+}

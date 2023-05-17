@@ -1,0 +1,62 @@
+.sohbet {
+    background-color: black;
+    color: #F7F6F1 ; 
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+}
+.sohbetarea{
+    flex:10.5;
+}
+.leftchatcontainer{
+    background-color: #F7F6F1;
+    color: #000000;
+    width: 50%;
+    height: 35px;
+    font-size: 7px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.rightchatcontainer{
+    background-color: #0D0D0D;
+    text-align: center;
+    color: #F7F6F1;
+    border: 1px solid #F7F6F1;
+    width: 52%;
+    height: 35px;
+    font-size: 7px;
+    font-weight: lighter;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-left: 45%;
+}
+.rightchatcontainer h1{
+    z-index: 5;
+}
+.sendmesssage{
+    flex:1.5 ;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    font-size: 7px;
+    font-weight: lighter;
+}
+.typemessage{
+    flex: 11.5;
+    border: 1px solid white;
+    background-color: #0D0D0D;  
+    margin: 0 30px; 
+    color: white;
+}
+.sendmessageicon{
+    flex:0.5;
+}

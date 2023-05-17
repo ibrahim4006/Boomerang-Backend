@@ -1,0 +1,13 @@
+.transition-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+}
+
+.transition-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

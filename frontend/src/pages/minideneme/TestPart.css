@@ -1,0 +1,176 @@
+/* .line {
+    border-top: 2px solid black;
+    margin-top: 50px;
+    position: relative;
+}
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+}
+.circle:nth-child(1) {
+    left: 10%;
+}
+.circle:nth-child(2) {
+    left: 18%;
+}
+.circle:nth-child(3) {
+    left: 26%;
+}
+.circle:nth-child(4) {
+    left: 34%;
+}
+.circle:nth-child(5) {
+    left: 42%;
+}
+.circle:nth-child(6) {
+    left: 50%;
+}
+.circle:nth-child(7) {
+    left: 58%;
+}
+.circle:nth-child(8) {
+    left: 66%;
+}
+.circle:nth-child(9) {
+    left: 74%;
+}
+.circle:nth-child(10) {
+    left: 82%;
+} */
+
+.testpart{
+    display: flex;
+ }
+.leftcontainer{
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-right: 1px solid black;
+}
+.leftsorucanvas{
+    display: flex;
+}
+.rightsorucanvas{
+    display: flex;
+}
+.canvasopen{
+    flex:12;
+}
+.rightcontainer{
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-left: 1px solid black;
+    margin-top: 300px;
+}
+.sorupartleft{
+    flex:6;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 150px;
+}
+.canvasopen-btnleft{
+    position: absolute;
+    top: 50%;
+    right: 14px;
+}
+.canvasarea{
+   flex: 6;
+}
+.sorucardleft{
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.sorucardleft h1 {
+    margin-bottom: 10px;
+}
+.sorupartright{
+    flex:6;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 150px;
+}
+.canvasopen-btnright{
+    position: absolute;
+    top: 50%;
+    left: -15px;
+}
+.sorucardright{
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    padding-top: 50px;
+    padding-left: 80px;
+}
+.sorucardright h1 {
+    margin-bottom: 10px;
+}
+.sorutext {
+    margin: 10px;
+    width: 100%;
+}
+.answer {
+    cursor: pointer;
+}
+.answer:hover,
+.answer.active {
+    border: 1px solid black;
+    padding: 10px;
+    border-left: 6px double black;
+}
+.open{
+    width: 100%;
+}
+.circle-outer {
+    width: 30px;
+    height: 30px;
+    background-color: #F7F6F1;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    top: 10%;
+    left: 39%;
+
+}
+.circle-inner {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 24%;
+    left: 25%;
+
+}
+.timelineleft{
+    width: 1px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    transform: rotate(90deg);
+    top: -30%;
+    left: -20%;
+}
+.minutes{
+    position: absolute;
+    top: -10%;
+    left: -80%;
+}
+.second{
+    position: absolute;
+    top: 60%;
+    left: -70%;
+}

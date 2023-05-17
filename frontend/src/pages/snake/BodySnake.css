@@ -1,0 +1,221 @@
+.bodysnake {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  height: 44vw;
+  margin: 0;
+  position: relative;
+}
+.pop-up {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  background-color: #0d0d0d;
+  width: 30em;
+  height: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #0d0d0d;
+  border-color: #f7f6f1;
+  font-weight: lighter;
+}
+.popup-meydanlink{
+    text-decoration: none;
+    color: inherit;
+}
+.pop-uptop {
+  flex: 5;
+  margin: 5px;
+  border-top: 2px solid white;
+  position: relative;
+}
+.pop-uptop::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  top: 0;
+  right: 0;
+  bottom: 98%;
+  height: 5%;
+  border-right: 1px solid white;
+}
+.pop-uptop::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  top: 0;
+  left: 0;
+  bottom: 98%;
+  height: 5%;
+  border-left: 1px solid white;
+}
+.pop-upbottom {
+  flex: 7;
+  margin: 5px;
+  border-bottom: 2px solid white;
+  position: relative;
+}
+.pop-upbottom::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  top: 95%;
+  left: 0;
+  bottom: 0;
+  height: 5%;
+  border-left: 1px solid white;
+}
+.pop-upbottom::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    top: 95%;
+    right: 0;
+    bottom: 1%;
+    height: 5%;
+    border-right: 1px solid white;
+  }
+.pop-uptopbox {
+  border-bottom: 1px solid rgba(247, 246, 241, 0.25);
+  z-index: 4;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  text-align: start;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.pop-uptopbox p {
+  margin-bottom: 2px;
+}
+
+.pop-upbottombox {
+  z-index: 4;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  text-align: start;
+  padding-top: 15px;
+  text-align: center;
+}
+.pop-upbottom p {
+  margin-bottom: 2px;
+}
+.pop-upbtn{
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    text-align: center;
+    padding: 10px;
+}
+.option-btn{
+    color: #F7F6F1;
+    background-color: #0D0D0D;
+    padding: 7px 40px;
+}
+.option-btn:hover{
+    color: #0D0D0D;
+    background-color: #F7F6F1;
+    padding: 7px 40px;
+}
+
+.snakearena {
+  flex: 5;
+  background-color: #0d0d0d;
+  display: flex;
+  color: #f7f6f1;
+}
+.gameover {
+  position: absolute;
+  top: 5%;
+  left: 17%;
+  color: #f7f6f1;
+  font-size: 48px;
+}
+.score {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  color: #f7f6f1;
+  font-size: 28px;
+}
+.applecount {
+  position: absolute;
+  top: 5%;
+  left: 46%;
+  color: #f7f6f1;
+  font-size: 16px;
+}
+.snakesoru {
+  flex: 7;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.snakesorutop {
+  flex: 11.5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+.snakesorubottom {
+  flex: 0.5;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.sorucard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+  padding: 100px;
+  font-size: 12px;
+}
+.snake-soru-h1{
+  margin:0;
+}
+.sorutext {
+  margin-bottom: 30px;
+  line-height: 1.2em;
+  width: 100%;
+}
+.answer {
+  margin-bottom: 15px;
+  cursor: pointer;
+  padding: 10px;
+}
+.answer:hover,
+.answer.active {
+  border: 1px solid black;
+  padding: 10px;
+  border-left: 6px double black;
+}
+.answer.correct {
+  border: 3px solid green;
+  border-left: 12px double green;
+}
+.answer.wrong {
+  border: 3px solid red;
+  border-left: 12px double red;
+}
+.zorluk-btn {
+  display: inline-block;
+  padding: auto;
+  width: 10em;
+  border: 2px solid black;
+  background-color: transparent;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  margin: 0 5px;
+}
+
+.zorluk-btn:hover {
+  background-color: #141414;
+  color: #f7f6f1;
+}

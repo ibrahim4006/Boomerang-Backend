@@ -1,0 +1,16 @@
+.herobar {
+    margin-left: 40px;
+    padding: 10px;
+    font-size: 12px;
+}
+.herobar a {
+    text-decoration: none;
+    padding: 10px;
+}
+.herobar:hover {
+    background-color: #0D0D0D;
+    padding: 10px;
+}
+.herobar a:hover {
+    color: #F7F6F1;
+}

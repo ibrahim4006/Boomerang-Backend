@@ -1,0 +1,75 @@
+.timer-columns{
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  text-align: center;
+  position: relative;
+  height: 250px; 
+}
+
+.section-name {
+  position: sticky;
+  padding-left: 10px;
+  height: 250px;
+  display: flex;
+  align-items: flex-end;
+  flex: 0.1;
+  border-right: 1px solid #F7F6F1;
+}
+.name {
+  font-size: 12px;
+  color: #F7F6F1;
+  transform: rotate(270deg);
+  margin-bottom: 25px;
+  opacity: 0.4;
+}
+.work-month {
+  font-size: 16px;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity ;
+  scroll-behavior: smooth;
+  height: 100%;
+  flex: 1;
+  margin-right: -25px;
+} 
+.work-day {
+  font-size: 16px;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity ;
+  scroll-behavior: smooth;
+  height: 100%;
+  flex: 1;
+  margin-right: -25px;
+} 
+
+.work-hour {
+  font-size: 24px;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity ;
+  scroll-behavior: smooth;
+  height: 100%;
+  flex: 1;
+  margin-right: -25px;
+}
+.work-minute{
+  font-size: 20px;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity ;
+  scroll-behavior: smooth;
+  height: 100%;
+  flex: 1;
+  margin-right: -25px;
+
+}
+.work-second {
+  font-size: 16px;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity ;
+  scroll-behavior: smooth;
+  height: 100%;
+  flex: 1;
+  margin-right: -25px;
+} 
+
+
+
