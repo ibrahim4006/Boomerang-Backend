@@ -3,10 +3,13 @@ import Header from "../../components/top-header/Header";
 import Hero from "../../components/hero/Hero";
 import LessonPart from "./LessonPart";
 import TestPartGenelDeneme from "./TestPartGenelDeneme";
+import { getDocs, collection, doc } from "firebase/firestore";
+import firestore from "../../FireBaseConfig";
 
 
 export default function GenelDeneme() {
   const [isTimerOn, setIsTimerOn] = useState(false)
+  const [activeLesson, setActiveLesson] = useState("Türkçe")
   // timer
   const [minutes, setMinutes] = useState("10");
   const [second, setSecond] = useState("00");
@@ -15,6 +18,7 @@ export default function GenelDeneme() {
   const timerId = useRef();
 
   useEffect(() => {
+    console.log(activeLesson)
     if (isTimerOn) {
       return;
     }
@@ -40,22 +44,35 @@ export default function GenelDeneme() {
   }, [countDown]);
   // fetching questions from backend
   const [questions, setQuestions] = useState(null);
-  useEffect(() => {
-    const fetchQuestions = async () => {
-      const response = await fetch("/api/questions");
-      const json = await response.json();
 
-      if (response.ok) {
-        setQuestions(json);
-      }
-    };
-    fetchQuestions();
-  }, []);
+  useEffect(() => {
+    const colRef = collection(
+      firestore,
+      "TYTGenelDeneme",
+      "fTfjcpNHUvq5yXxt3vMy",
+      "TYT Genel Deneme 1",
+      "34dp2ZqOo6Sd5evTQeB2",
+      `${activeLesson}`
+    );
+
+    getDocs(colRef)
+      .then((snapshot) => {
+        let fetchedQuestions = [];
+        snapshot.docs.forEach((doc) => {
+          fetchedQuestions.push({ ...doc.data(), id: doc.id });
+        });
+        setQuestions(fetchedQuestions);
+      })
+      .catch((error) => {
+        console.error("Error fetching questions: ", error);
+      });
+  }, [activeLesson]);
+
   return (
     <>
       <Header />
       <Hero pageSubject="TYT/Deneme-2" barTitle={[]} />
-      <LessonPart />
+      <LessonPart setActiveLesson={setActiveLesson}/>
       <TestPartGenelDeneme questions={questions} minutes={minutes} second={second}/>
     </>
   );

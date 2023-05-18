@@ -1,25 +1,28 @@
 import React from 'react'
 import ClassLesson from './ClassLesson';
 
-export default function LessonPart() {
-    const konular = [
-        "Türkçe",
-        "Tarih",
-        "Coğrafya",
-        "Felsefe",
-        "Din Kültürü ve Ahlak Bilgisi",
-        "Matematik",
-        "Fizik",
-        "Kimya",
-        "Biyoloji",
-      ];
+export default function LessonPart({ setActiveLesson }) {
+  const konular = [
+    "Türkçe",
+    "Tarih",
+    "Coğrafya",
+    "Felsefe",
+    "Din Kültürü ve Ahlak Bilgisi",
+    "Matematik",
+    "Fizik",
+    "Kimya",
+    "Biyoloji",
+  ];
+
   return (
     <>
-      {konular.map((konu,ind) => 
-          <ClassLesson 
+      {konular.map((konu, ind) => (
+        <ClassLesson
           key={ind}
-          lesson={konu}/>
-        )}
+          lesson={konu}
+          setActiveLesson = {setActiveLesson}
+        />
+      ))}
     </>
-  )
+  );
 }

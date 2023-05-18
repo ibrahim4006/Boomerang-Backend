@@ -13,6 +13,7 @@ import GenelDeneme from "./pages/geneldeneme/GenelDeneme";
 import { useEffect } from "react";
 import Quote from "./pages/quote/Quote";
 import Panel from "./pages/panel/Panel";
+import TytGenelAdder from "./questionadder/TytGenelAdder";
 
 function App() {
   const {user} = useAuthContext()
@@ -28,9 +29,10 @@ function App() {
     <div className="app">
       <BrowserRouter>
         <Routes>
-          <Route path="/login" element={!user ? <Login /> : <Navigate to="/quote" />} />
+          <Route path="/login" element={!user ? <Login /> : <Navigate to="/meydan" />} />
+          {/* <Route path="/adder" element={user ? <TytGenelAdder /> : <Navigate to="/login" />} /> */}
           <Route path="/signup" element={!user ? <SignUp /> : <Navigate to="/login" />} />
-          <Route path="/quote" element={user ? <Quote />: undefined} />
+          {/* <Route path="/quote" element={user ? <Quote />: undefined} /> */}
           <Route path="/meydan" element={user ? <Meydan />: <Navigate to="/login"/>} />
           <Route path="/panel" element={user ? <Panel />: <Navigate to="/login"/>} />
           <Route path="meydan/istila" element={user ? <Istila />: <Navigate to="/login"/>} />

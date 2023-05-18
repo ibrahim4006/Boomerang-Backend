@@ -3,14 +3,15 @@ import "./ClassLesson.css";
 import LessonProgressCard from "./LessonProgressCard";
 import BoomerangOk from "./boomerangok.svg"
 
-function ClassLesson({ lesson }) {
+function ClassLesson({ lesson, setActiveLesson }) {
   const [showLessonDetail, setshowLessonDetail] = useState(false);
 
-  const handleClickLesson = () => {
+  const handleClickLesson = (lesson) => {
     setshowLessonDetail(!showLessonDetail);
+    setActiveLesson(lesson);
   }
   return (
-    <div className="classlesson"  onClick={handleClickLesson}>
+    <div className="classlesson"  onClick={() => handleClickLesson(lesson)}>
       <h1>{lesson}</h1>
       {showLessonDetail && (
         <div className="lessonprogresscard">
