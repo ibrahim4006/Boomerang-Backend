@@ -1,0 +1,108 @@
+{
+    "AYT": [
+      {
+        "Matematik": [
+          {
+            "question": "What is the capital city of Australia?",
+            "answers": [
+              "Sydney",
+              "Melbourne",
+              "Brisbane",
+              "Canberra",
+              "Perth"
+            ],
+            "answer": 3
+          },
+          {
+            "question": "What is the capital city of Australia?",
+            "answers": [
+              "Sydney",
+              "Melbourne",
+              "Brisbane",
+              "Canberra",
+              "Perth"
+            ],
+            "answer": 3
+          }
+        ]
+      },
+      {
+        "Fizik": [
+          {
+            "question": "What is the capital city of Australia?",
+            "answers": [
+              "Sydney",
+              "Melbourne",
+              "Brisbane",
+              "Canberra",
+              "Perth"
+            ],
+            "answer": 3
+          },
+          {
+            "question": "What is the capital city of Australia?",
+            "answers": [
+              "Sydney",
+              "Melbourne",
+              "Brisbane",
+              "Canberra",
+              "Perth"
+            ],
+            "answer": 3
+          }
+        ]
+      },
+      {
+        "Kimya": [
+          {
+            "question": "What is the capital city of Australia?",
+            "answers": [
+              "Sydney",
+              "Melbourne",
+              "Brisbane",
+              "Canberra",
+              "Perth"
+            ],
+            "answer": 3
+          },
+          {
+            "question": "What is the capital city of Australia?",
+            "answers": [
+              "Sydney",
+              "Melbourne",
+              "Brisbane",
+              "Canberra",
+              "Perth"
+            ],
+            "answer": 3
+          }
+        ]
+      },
+      {
+        "Biyoloji": [
+          {
+            "question": "What is the capital city of Australia?",
+            "answers": [
+              "Sydney",
+              "Melbourne",
+              "Brisbane",
+              "Canberra",
+              "Perth"
+            ],
+            "answer": 3
+          },
+          {
+            "question": "What is the capital city of Australia?",
+            "answers": [
+              "Sydney",
+              "Melbourne",
+              "Brisbane",
+              "Canberra",
+              "Perth"
+            ],
+            "answer": 3
+          }
+        ]
+      }
+    ]
+  }
