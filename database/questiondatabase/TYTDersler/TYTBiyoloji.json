@@ -1,0 +1,128 @@
+{
+    "Biyoloji": [
+      {
+        "subjects": [
+          {
+            "Canlıların Ortak Özellikleri": [
+              {
+                "question": "What is the capital city of Australia?",
+                "answers": [
+                  "Sydney",
+                  "Melbourne",
+                  "Brisbane",
+                  "Canberra",
+                  "Perth"
+                ],
+                "answer": 3
+              }
+            ]
+          },
+          {
+            "CAnlıların Temel Bileşenleri": [
+              {
+                "question": "What is the capital city of Australia?",
+                "answers": [
+                  "Sydney",
+                  "Melbourne",
+                  "Brisbane",
+                  "Canberra",
+                  "Perth"
+                ],
+                "answer": 3
+              }
+            ]
+          },
+          {
+            "Hücre ve Organeller": [
+              {
+                "question": "What is the capital city of Australia?",
+                "answers": [
+                  "Sydney",
+                  "Melbourne",
+                  "Brisbane",
+                  "Canberra",
+                  "Perth"
+                ],
+                "answer": 3
+              }
+            ]
+          },
+          {
+            "Canlıların Sınıflandırması ": [
+              {
+                "question": "What is the capital city of Australia?",
+                "answers": [
+                  "Sydney",
+                  "Melbourne",
+                  "Brisbane",
+                  "Canberra",
+                  "Perth"
+                ],
+                "answer": 3
+              }
+            ]
+          },
+          {
+            "Hücrede Bölünme - Üreme": [
+              {
+                "question": "What is the capital city of Australia?",
+                "answers": [
+                  "Sydney",
+                  "Melbourne",
+                  "Brisbane",
+                  "Canberra",
+                  "Perth"
+                ],
+                "answer": 3
+              }
+            ]
+          },
+          {
+            "Kalıtım": [
+              {
+                "question": "What is the capital city of Australia?",
+                "answers": [
+                  "Sydney",
+                  "Melbourne",
+                  "Brisbane",
+                  "Canberra",
+                  "Perth"
+                ],
+                "answer": 3
+              }
+            ]
+          },
+          {
+            "Bitki Biyolojisi": [
+              {
+                "question": "What is the capital city of Australia?",
+                "answers": [
+                  "Sydney",
+                  "Melbourne",
+                  "Brisbane",
+                  "Canberra",
+                  "Perth"
+                ],
+                "answer": 3
+              }
+            ]
+          },
+          {
+            "Ekosistem": [
+              {
+                "question": "What is the capital city of Australia?",
+                "answers": [
+                  "Sydney",
+                  "Melbourne",
+                  "Brisbane",
+                  "Canberra",
+                  "Perth"
+                ],
+                "answer": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
