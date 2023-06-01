@@ -1,7 +1,7 @@
 import React from 'react'
 import ClassLesson from './ClassLesson';
 
-export default function LessonPart({ setActiveLesson }) {
+export default function LessonPart({ setActiveLesson, studentAnswer, activeLesson, data, setStudentAnswer }) {
   const konular = [
     "Türkçe",
     "Tarih",
@@ -21,6 +21,10 @@ export default function LessonPart({ setActiveLesson }) {
           key={ind}
           lesson={konu}
           setActiveLesson = {setActiveLesson}
+          studentAnswer= {studentAnswer}
+          activeLesson= {activeLesson}
+          data={data}
+          setStudentAnswer={setStudentAnswer}
         />
       ))}
     </>
