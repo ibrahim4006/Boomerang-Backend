@@ -40,7 +40,7 @@ export default function EntranceCardCompetition({
       </div>
       <div className="bottom-part">
           <div className="bottom-box" key={ders}>
-            <p onMouseEnter={() => handleHoverInfo()} onMouseLeave={() => handleLeaveInfo()}>
+            <div onMouseEnter={() => handleHoverInfo()} onMouseLeave={() => handleLeaveInfo()}>
               <span>
                 <img src={Ok} className="cardOk" alt="Ok" />
               </span>
@@ -52,7 +52,7 @@ export default function EntranceCardCompetition({
                 <p>Konu : Üslü Sayılar </p>
               </div>
             )}
-            </p>
+            </div>
           </div>
           <div className="rules">(Kurallar)</div>
       </div>

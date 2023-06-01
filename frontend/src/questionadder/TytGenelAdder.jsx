@@ -1,17 +1,29 @@
 import React, { useState } from "react";
 import { addDoc, collection, doc } from "firebase/firestore";
 import firestore from "../FireBaseConfig";
+import {getStorage, ref, uploadBytes} from "firebase/storage"
+import { v4 as uuid } from 'uuid';
+
 
 export default function TytGenelAdder() {
   const [lesson, setLesson] = useState("");
   const [denemeNumber, setDenemeNumber] = useState("");
-  const [questionText, setQuestionText] = useState("");
+  const [questionTextTop, setQuestionTextTop] = useState("");
+  const [questionTextBottom, setQuestionTextBottom] = useState("");
+  const [imageUpload, setImageUpload] = useState(null);
   const [choiceA, setChoiceA] = useState("");
   const [choiceB, setChoiceB] = useState("");
   const [choiceC, setChoiceC] = useState("");
   const [choiceD, setChoiceD] = useState("");
   const [choiceE, setChoiceE] = useState("");
   const [correctAnswer, setCorrectAnswer] = useState("");
+
+  const storageRef = getStorage();
+
+  const handleImageUpload = (e) => {
+    const file = e.target.files[0];
+    setImageUpload(file);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -25,25 +37,41 @@ export default function TytGenelAdder() {
     const nestedDocRef = doc(nestedCollectionRef,"34dp2ZqOo6Sd5evTQeB2");
     const colRef = collection(nestedDocRef, `${lesson}`)
 
-    addDoc(colRef , {
-      question: questionText,
-      answers: [choiceA, choiceB, choiceC, choiceD, choiceE],
-      answer: correctAnswer,
-    })
-      .then(() => {
-        setLesson("");
-        setDenemeNumber("");
-        setQuestionText("");
-        setChoiceA("");
-        setChoiceB("");
-        setChoiceC("");
-        setChoiceD("");
-        setChoiceE("");
-        setCorrectAnswer("");
+    const imagePath = `${imageUpload.name + uuid()}`;
+
+    const imageRef = ref(storageRef, `Tytimages/${imagePath}`);
+  uploadBytes(imageRef, imageUpload)
+    .then(() => {
+      // Image uploaded successfully
+      
+      addDoc(colRef, {
+        questionTop: questionTextTop,
+        questionBottom: questionTextBottom,
+        image: imagePath,
+        answers: [choiceA, choiceB, choiceC, choiceD, choiceE],
+        answer: correctAnswer,
       })
-      .catch((error) => {
-        console.error("Error adding question: ", error);
-      });
+        .then(() => {
+          // Question added successfully
+          setLesson("");
+          setDenemeNumber("");
+          setImageUpload(null);
+          setQuestionTextTop("");
+          setQuestionTextBottom("");
+          setChoiceA("");
+          setChoiceB("");
+          setChoiceC("");
+          setChoiceD("");
+          setChoiceE("");
+          setCorrectAnswer("");
+        })
+        .catch((error) => {
+          console.error("Error adding question: ", error);
+        });
+    })
+    .catch((error) => {
+      console.error("Error uploading image: ", error);
+    });
   };
   return (
     <>
@@ -65,12 +93,27 @@ export default function TytGenelAdder() {
           placeholder="Write lesson name"
         />
         <input
-          id="question"
-          name="questionText"
-          onChange={(e) => setQuestionText(e.target.value)}
-          value={questionText}
+          id="questionTop"
+          name="questionTextTop"
+          onChange={(e) => setQuestionTextTop(e.target.value)}
+          value={questionTextTop}
           type="text"
-          placeholder="Write question text"
+          placeholder="Write question text top"
+        />
+        <input
+          id="photo"
+          name="questionPhoto"
+          onChange={handleImageUpload}
+          type="file"
+          placeholder="Upload image if exist"
+        />
+        <input
+          id="questionBottom"
+          name="questionTextBottom"
+          onChange={(e) => setQuestionTextBottom(e.target.value)}
+          value={questionTextBottom}
+          type="text"
+          placeholder="Write question text bottom"
         />
         <input
           id="choiceA"

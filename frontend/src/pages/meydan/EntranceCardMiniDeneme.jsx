@@ -45,7 +45,7 @@ export default function EntranceCardMiniDeneme({
       <div className="bottom-part">
         {dersler.map((ders,index) => (
           <div className="bottom-box" key={ders}>
-            <p onMouseEnter={() => handleHoverInfo(index)} onMouseLeave={() => handleLeaveInfo(index)}>
+            <div onMouseEnter={() => handleHoverInfo(index)} onMouseLeave={() => handleLeaveInfo(index)}>
               <span>
                 <img src={Ok} className="cardOk" alt="Ok" />
               </span>
@@ -57,7 +57,7 @@ export default function EntranceCardMiniDeneme({
                 <p>Konu : Üslü Sayılar </p>
               </div>
             )}
-            </p>
+            </div>
           </div>
         ))}
       </div>

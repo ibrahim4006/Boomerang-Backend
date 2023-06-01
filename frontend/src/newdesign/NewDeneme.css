@@ -1,0 +1,7 @@
+#option1:hover,
+#option2:hover,
+#option3:hover,
+#option4:hover,
+#option5:hover {
+  cursor: crosshair;
+}

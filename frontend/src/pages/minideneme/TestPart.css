@@ -42,7 +42,7 @@
     left: 82%;
 } */
 
-.testpart{
+/* .testpart{
     display: flex;
  }
 .leftcontainer{
@@ -118,19 +118,7 @@
 .sorucardright h1 {
     margin-bottom: 10px;
 }
-.sorutext {
-    margin: 10px;
-    width: 100%;
-}
-.answer {
-    cursor: pointer;
-}
-.answer:hover,
-.answer.active {
-    border: 1px solid black;
-    padding: 10px;
-    border-left: 6px double black;
-}
+
 .open{
     width: 100%;
 }
@@ -173,4 +161,4 @@
     position: absolute;
     top: 60%;
     left: -70%;
-}
+} */

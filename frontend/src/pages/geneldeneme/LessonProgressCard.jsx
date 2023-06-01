@@ -1,12 +1,12 @@
 import React from "react";
 import "./ClassLesson.css";
 
-function LessonProgressCard() {
+function LessonProgressCard({title, relatednumber}) {
   return (
     <div className="cardprogress">
-      <span class="icon-plus">+</span>
-      <p>Tekrar Testi</p>
-      <h1>09</h1>
+      <span className="icon-plus">+</span>
+      <p>{title}</p>
+      <h1>{relatednumber ? relatednumber : "0"}</h1>
     </div>
   );
 }
