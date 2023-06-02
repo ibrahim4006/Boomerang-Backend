@@ -5,6 +5,7 @@ import { useLogout } from "../../hooks/useLogout";
 import { getDownloadURL, getStorage, listAll, ref } from "firebase/storage";
 import ImageHover from "../../newdesign/ImageHover";
 import GenelDenemeResultBar from "./GenelDenemeResultBar";
+import ResultCardsDeneme from "./ResultCardsDeneme";
 
 
 export default function TestPartGenelDeneme({ activeLesson, minutes, second, studentAnswer, setStudentAnswer,data,setData}) {
@@ -12,6 +13,7 @@ export default function TestPartGenelDeneme({ activeLesson, minutes, second, stu
   const evenArray = [...Array(5).keys()].map((i) => i * 2 + 2);
   const [realAnswer, setRealAnswer] = useState({});
   const [resultObject, setResultObject] = useState({});
+  const [isshowResult, setisShowResult] = useState(true);
   const dersler = [
     "Türkçe",
     "Tarih",
@@ -212,7 +214,7 @@ export default function TestPartGenelDeneme({ activeLesson, minutes, second, stu
                 <div className="leftsorucanvas" key={ind}>
                   <div className="sorupartleft">
                     <div className="sorucardleft">
-                      <h1>{oddArray[ind]}</h1>
+                      <h1 id={`question-${oddArray[ind]}`}>{oddArray[ind]}</h1>
                       <ImageHover
                         key={ind}
                         photo={item.url}
@@ -265,7 +267,7 @@ export default function TestPartGenelDeneme({ activeLesson, minutes, second, stu
                   )}
                   <div className="sorupartright">
                     <div className="sorucardright">
-                      <h1>{evenArray[ind]}</h1>
+                      <h1 id={`question-${evenArray[ind]}`}>{evenArray[ind]}</h1>
                       <ImageHover
                         key={ind}
                         photo={item.url}
@@ -294,8 +296,9 @@ export default function TestPartGenelDeneme({ activeLesson, minutes, second, stu
           </div>
         )}
       </div>
-      <GenelDenemeResultBar />
-      {/* <button onClick={() => compareResults(studentAnswer,realAnswer)}> Show the Results</button> */}
+      {activeLesson && data[activeLesson].length && <GenelDenemeResultBar studentAnswer={studentAnswer} activeLesson={activeLesson} lengthofArray = {data[activeLesson].length }/>}
+      <button className="deneme-bitir-btn" > <b>Denemeyi Bitir</b></button>
+      {isshowResult && <ResultCardsDeneme />}
     </>
   );
 }

@@ -175,7 +175,7 @@
   height: 2%;
   border-left: 1px solid black;
 }
-.bottom-box {
+.bottom-box .bottom-box-info{
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
   padding: 5px;
   display: flex;

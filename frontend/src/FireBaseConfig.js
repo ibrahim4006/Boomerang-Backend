@@ -6,6 +6,7 @@ import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
     apiKey: "AIzaSyAIfUX_sQQUwqZOibprFjCJuvyUN0QE-jc",
     authDomain: "boomerang-online-examination.firebaseapp.com",
+    databaseURL: "http://boomerang-online-examination.firebaseio.com",
     projectId: "boomerang-online-examination",
     storageBucket: "boomerang-online-examination.appspot.com",
     messagingSenderId: "728863812081",

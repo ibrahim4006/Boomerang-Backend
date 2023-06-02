@@ -77,7 +77,7 @@ function ClassLesson({
             relatednumber={
               (studentAnswer[lesson] &&
               data[lesson]) ?
-              data[lesson].length - studentAnswer[lesson].length : data[lesson].length
+              data[lesson].length - studentAnswer[lesson].filter((answer) => answer !== null).length : data[lesson].length
             }
           />
           <LessonProgressCard
