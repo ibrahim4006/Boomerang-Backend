@@ -43,6 +43,8 @@ function App() {
           <Route path="/panel" element={user ? <Panel />: <Navigate to="/login"/>} />
           <Route path="meydan/istila" element={user ? <Istila />: <Navigate to="/login"/>} />
           <Route path="/meydan/snake" element={user ? <Snake />: <Navigate to="/login"/>} />
+          <Route path="/meydan/hangman" element={user ? <Hangman />: <Navigate to="/login"/>} />
+          <Route path="/meydan/iskambil" element={user ? <Iskambil />: <Navigate to="/login"/>} />
           <Route path="/meydan/minideneme" element={user ? <MiniDeneme />: <Navigate to="/login"/>} />
           <Route path="/meydan/geneldeneme" element={user ? <GenelDeneme />: <Navigate to="/login"/>} />
         </Routes>

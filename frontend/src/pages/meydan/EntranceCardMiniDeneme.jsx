@@ -12,13 +12,13 @@ export default function EntranceCardMiniDeneme({
   const [showlessoninfo, setLessonInfo] = useState(Array(8).fill(false));
 
   const handleHoverInfo = (index) => {
-    const updatedLessonInfo = [...showlessoninfo]; 
-    updatedLessonInfo[index] = true; 
+    const updatedLessonInfo = [...showlessoninfo];
+    updatedLessonInfo[index] = true;
     setLessonInfo(updatedLessonInfo);
   };
   const handleLeaveInfo = (index) => {
-    const updatedLessonInfo = [...showlessoninfo]; 
-    updatedLessonInfo[index] = false; 
+    const updatedLessonInfo = [...showlessoninfo];
+    updatedLessonInfo[index] = false;
     setLessonInfo(updatedLessonInfo);
   };
 
@@ -43,20 +43,24 @@ export default function EntranceCardMiniDeneme({
         </div>
       </div>
       <div className="bottom-part">
-        {dersler.map((ders,index) => (
+        {dersler.map((ders, index) => (
           <div className="bottom-box" key={ders}>
-            <div onMouseEnter={() => handleHoverInfo(index)} onMouseLeave={() => handleLeaveInfo(index)}>
+            <div
+              onMouseEnter={() => handleHoverInfo(index)}
+              onMouseLeave={() => handleLeaveInfo(index)}
+              className="bottom-box-info"
+            >
               <span>
                 <img src={Ok} className="cardOk" alt="Ok" />
               </span>
               [ {ders} ]
               {showlessoninfo[index] && (
-              <div className="infocard">
-                <p>Soru Sayısı : {10} </p>
-                <p>Zorluk : Easy </p>
-                <p>Konu : Üslü Sayılar </p>
-              </div>
-            )}
+                <div className="infocard">
+                  <p>Soru Sayısı : {10} </p>
+                  <p>Zorluk : Easy </p>
+                  <p>Konu : Üslü Sayılar </p>
+                </div>
+              )}
             </div>
           </div>
         ))}

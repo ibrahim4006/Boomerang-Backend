@@ -103,24 +103,24 @@ export default function Meydan() {
             />
           </Link>
           <Link
-            to="/meydan/snake"
+            to="/meydan/hangman"
             className={imageIndex === 3 ? "slide activeSlide" : "slide"}
           >
             <EntranceCardGame
               type="Oyun"
-              description="Yılan"
+              description="Hangman"
               hak={3}
               PuanKatsayisi={2}
               ders={dersler[0]}
             />
           </Link>
           <Link
-            to="/meydan/snake"
+            to="/meydan/iskambil"
             className={imageIndex === 4 ? "slide activeSlide" : "slide"}
           >
             <EntranceCardGame
               type="Oyun"
-              description="Yılan"
+              description="Iskambil"
               hak={3}
               PuanKatsayisi={2}
               ders={dersler[0]}
