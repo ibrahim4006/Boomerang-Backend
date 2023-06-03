@@ -6,90 +6,48 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-left: 5%;
   padding-top: 5%;
-  gap: 13vw;
+  gap: 17vw;
   border-right: 1px solid black;
   margin-bottom: 5%;
 }
-.leftsorucanvas,
-.rightsorucanvas {
-  display: flex;
-}
 
-.canvasopen {
-  flex: 12;
-}
 .rightcontainer {
   flex: 6;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 13vw;
-  padding-top: 15%;
+  padding-top: 25%;
   margin-bottom: 5%;
 }
-.sorupartleft {
-  flex: 6;
-  position: relative;
-}
-.canvasopen-btnleft {
-  position: absolute;
-  top: 50%;
-  right: 14px;
-}
-.canvasarea {
-  flex: 6;
-}
+
 .sorucardleft {
-  flex: 6;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 20px;
+  padding-left: 15%;
   font-size: 12px;
+  position: relative;
 }
 
 .sorucardleft img,
 .sorucardright img {
-  width: 65%;
+  width: 100%;
   height: auto;
 }
-.sorupartright {
-  flex: 6;
-  position: relative;
-}
-.canvasopen-btnright {
-  position: absolute;
-  top: 60%;
-  left: -15px;
-}
-.sorucardright {
-  flex: 6;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 12px;
-  padding-left: 15%;
-}
-/* .sorucardright h1, .sorucardleft h1  {
-    margin-bottom: 5%;
-} */
-
-.open {
-  width: 100%;
-}
-.circle-outer {
+.circle-outer-left {
   width: 30px;
   height: 30px;
   background-color: #f7f6f1;
   border-radius: 50%;
   border: 1px solid black;
   position: absolute;
-  top: 14%;
-  left: 39%;
+  top: 50%;
+  right: -2%;
 }
-.circle-inner {
+.circle-inner-left {
   width: 15px;
   height: 15px;
   background-color: black;
@@ -98,7 +56,7 @@
   top: 24%;
   left: 25%;
 }
-.timelineleft {
+.timelineleft-left {
   width: 1px;
   height: 50px;
   background-color: black;
@@ -107,16 +65,200 @@
   top: -30%;
   left: -20%;
 }
-.minutes {
+.minutes-left {
   position: absolute;
   top: -12%;
   left: -100%;
 }
-.second {
+.second-left {
   position: absolute;
   top: 60%;
   left: -90%;
 }
+.sorucardleft-btns{
+    position: absolute;
+    top: 50%;
+    right: -2%;
+    text-align: center;
+}
+.referencepointleft{
+    position: relative;
+}
+.sorufav-btn-left-outer{
+    width: 30px;
+    height: 30px;
+    z-index: 3;
+    background-color: #f7f6f1;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    top: -3.5vw;
+    right: -3.5vw; 
+}
+.canvas-btn-left-outer{
+    width: 30px;
+    height: 30px;
+    background-color: #f7f6f1;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    right: -7vw; 
+}
+.godownpanel-left-outer{
+    width: 30px;
+    height: 30px;
+    background-color: #f7f6f1;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    top: 3.5vw;
+    right: -3.5vw; 
+}
+.sorufav-btn-left-inner{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 24%;
+    right: 25%;
+}
+.canvas-btn-left-inner{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 24%;
+    right: 25%;
+}
+.godownpanel-left-inner{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 24%;
+    right: 25%;
+}
+.sorucardright {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  font-size: 12px;
+  padding-left: 20%;
+  position: relative;
+}
+
+.circle-outer-right {
+  width: 30px;
+  height: 30px;
+  background-color: #f7f6f1;
+  border-radius: 50%;
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: -2%;
+}
+.circle-inner-right {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 24%;
+  left: 25%;
+}
+.timelineleft-right {
+  width: 1px;
+  height: 50px;
+  background-color: black;
+  position: absolute;
+  transform: rotate(90deg);
+  top: -38%;
+  right: -25%;
+}
+.minutes-right {
+  position: absolute;
+  top: -12%;
+  right: -100%;
+}
+.second-right {
+  position: absolute;
+  top: 60%;
+  right: -90%;
+}
+.sorucardright-btns{
+    position: absolute;
+    top: 50%;
+     left: -2%;
+    text-align: center;
+}
+.referencepointright{
+    position: relative;
+}
+.sorufav-btn-right-outer{
+    width: 30px;
+    height: 30px;
+    z-index: 3;
+    background-color: #f7f6f1;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    top: -3.5vw;
+    left: -3.5vw; 
+}
+.canvas-btn-right-outer{
+    width: 30px;
+    height: 30px;
+    background-color: #f7f6f1;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    left: -7vw; 
+}
+.godownpanel-right-outer{
+    width: 30px;
+    height: 30px;
+    background-color: #f7f6f1;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    top: 3.5vw;
+    left: -3.5vw; 
+}
+.sorufav-btn-right-inner{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 24%;
+    left: 25%;
+}
+.canvas-btn-right-inner{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 24%;
+    left: 25%;
+}
+.godownpanel-right-inner{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 24%;
+    left: 25%;
+}
+
+
 
 .line-result {
   border-top: 2px solid black;

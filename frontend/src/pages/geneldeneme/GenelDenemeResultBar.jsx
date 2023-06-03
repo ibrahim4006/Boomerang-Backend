@@ -12,7 +12,7 @@ function GenelDenemeResultBar({ studentAnswer, activeLesson, lengthofArray }) {
         })} */}
       {lengthofArray &&
         Array.from({ length: lengthofArray }, (_, index) => (
-          <a href={`#question-${index + 1}`}>
+          <a href={`#question-${index + 1}`} key={index}>
             <div
               className={
                 studentAnswer[activeLesson] &&
