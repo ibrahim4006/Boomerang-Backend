@@ -9,6 +9,7 @@ import PanoCard from "./PanoCard";
 import { useLogout } from "../../hooks/useLogout";
 import { useAuthContext } from "../../hooks/useAuthContext";
 import { Link } from "react-router-dom";
+import { getAuth, signOut } from "firebase/auth";
 
 function Header() {
   const [showTimer, setShowTimer] = useState(false);
@@ -17,9 +18,10 @@ function Header() {
   const myHeading = document.querySelector("#timer");
   const { logout } = useLogout();
   const { user } = useAuthContext();
+  const auth = getAuth();
 
   const handleLogoutClick = () => {
-    logout();
+    signOut(auth);
   };
 
   const handleClickTimer = () => {
@@ -41,7 +43,7 @@ function Header() {
   return (
     <div className="header">
       <div className="logo-header">
-        <Link to="/meydan">
+        <Link to="/">
           <img className="logonav" src={logo} alt="Boomerang logo" />
         </Link>
       </div>
@@ -57,8 +59,8 @@ function Header() {
             </div>
           )}
         </div>
-        <Link to="/panel" className="panel-link">
-          <p className="nav-el text">Görev Panosu</p>
+        <Link to="/mesajlar" className="panel-link">
+          <p className="nav-el text">Mesajlar</p>
         </Link>
         <p className="nav-el text">Takvim</p>
         <button className="nav-el text" onClick={handleLogoutClick}>

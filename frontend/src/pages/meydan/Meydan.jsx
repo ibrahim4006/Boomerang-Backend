@@ -67,7 +67,7 @@ export default function Meydan() {
       <div className="cardsections">
         <Slider {...settings}>
           <Link
-            to="/meydan/istila"
+            to="/istila"
             className={imageIndex === 0 ? "slide activeSlide" : "slide"}
           >
             <EntranceCardCompetition
@@ -79,7 +79,7 @@ export default function Meydan() {
             />
           </Link>
           <Link
-            to="/meydan/geneldeneme"
+            to="/geneldeneme"
             className={imageIndex === 1 ? "slide activeSlide" : "slide"}
           >
             <EntranceCardMiniDeneme
@@ -91,7 +91,7 @@ export default function Meydan() {
             />
           </Link>
           <Link
-            to="/meydan/snake"
+            to="/snake"
             className={imageIndex === 2 ? "slide activeSlide" : "slide"}
           >
             <EntranceCardGame
@@ -103,7 +103,7 @@ export default function Meydan() {
             />
           </Link>
           <Link
-            to="/meydan/hangman"
+            to="/hangman"
             className={imageIndex === 3 ? "slide activeSlide" : "slide"}
           >
             <EntranceCardGame
@@ -115,7 +115,7 @@ export default function Meydan() {
             />
           </Link>
           <Link
-            to="/meydan/iskambil"
+            to="/iskambil"
             className={imageIndex === 4 ? "slide activeSlide" : "slide"}
           >
             <EntranceCardGame

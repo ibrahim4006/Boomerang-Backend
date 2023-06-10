@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { addDoc, collection, doc } from "firebase/firestore";
-import firestore from "../FireBaseConfig";
+import { storage, firestore } from "../FireBaseConfig";
 import {getStorage, ref, uploadBytes} from "firebase/storage"
 import { v4 as uuid } from 'uuid';
 
@@ -18,7 +18,6 @@ export default function TytGenelAdder() {
   const [choiceE, setChoiceE] = useState("");
   const [correctAnswer, setCorrectAnswer] = useState("");
 
-  const storageRef = getStorage();
 
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
@@ -39,7 +38,7 @@ export default function TytGenelAdder() {
 
     const imagePath = `${imageUpload.name + uuid()}`;
 
-    const imageRef = ref(storageRef, `Tytimages/${imagePath}`);
+    const imageRef = ref(storage, `Tytimages/${imagePath}`);
   uploadBytes(imageRef, imageUpload)
     .then(() => {
       // Image uploaded successfully

@@ -12,6 +12,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #F7F6F1;
 }
+input {
+  margin: 0; /* Reset the margin */
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

@@ -4,7 +4,7 @@ import AnaSayfa from "./AnaSayfa";
 import Kürsü from "./Kürsü";
 import Istatistikler from "./Istatistikler";
 import Profil from "./Profil";
-import Mesajlar from "./Mesajlar";
+import Mesajlar from "../../mesajlar/Mesajlar";
 import Yarisma from "./Yarisma";
 import Arsiv from "./Arsiv";
 
