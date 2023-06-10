@@ -1,16 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./ProfilCard.css"
 import PersonIcon from '@mui/icons-material/Person';
 import zincir from "./zincir.svg"
 import HexagonIcon from '@mui/icons-material/Hexagon';
+import { AuthContext } from '../../context/AuthContext';
 
 function ProfilCard() {
+  const {currentUser} = useContext(AuthContext)
+
   return (
     <div className='profilcard'>
-        <PersonIcon />
+        {/* <PersonIcon /> */}
+        <img src = {currentUser.photoURL} className='istila-profimage'/>
         <div className='personalinfo'>
             <p>İbrahim Ergen</p>
-            <p>Olimpiyat</p>
             <p>Derece</p>
         </div>
         <p className='seviye'>25</p>

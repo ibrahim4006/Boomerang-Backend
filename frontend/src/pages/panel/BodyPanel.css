@@ -400,32 +400,4 @@ svg {
   font-weight: 100;
 } 
 
-.panel-mesajlar{
-  display: flex;
-}
-.history-msg{
-  flex: 6;
-  padding-top: 5%;
-  border: 1px solid black;
-}
-.send-msg{
-  border: 1px solid black;
-  flex: 6;
-}
-.history-msg-top{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 10%;
-  margin-bottom: 5%;
-}
-.message-icons{
-  display: flex;
-  justify-content: center;
-  gap:30%;
-}
-.message-icons img{
-  width:20%;
-  height: auto;
-}
 

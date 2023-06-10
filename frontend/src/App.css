@@ -5,3 +5,6 @@
     margin: 0;
     box-sizing: border-box;
 }
+input {
+    margin: 0; /* Reset the margin */
+  }

@@ -5,8 +5,8 @@ import io from "socket.io-client";
 
 
 function Sohbet() {
-  // const [inputValue, setInputValue] = useState("");
-  // const [messages, setMessages] = useState([]);
+  const [inputValue, setInputValue] = useState("");
+  const [messages, setMessages] = useState([]);
   // const [socket, setSocket] = useState(null);
   // const ENDPOINT = "localhost:5000"
 
@@ -42,7 +42,7 @@ function Sohbet() {
           ))}
         </div> */}
       </div>
-      {/* <form className="sendmesssage">
+      <form className="sendmesssage">
         <input
           className="typemessage"
           type="text"
@@ -54,9 +54,8 @@ function Sohbet() {
           src={ok}
           alt="sendmessageicon"
           className="sendmessageicon"
-          onClick={handleClickSend}
         />
-      </form> */}
+      </form>
     </div>
   );
 }
